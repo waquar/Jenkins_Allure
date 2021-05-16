@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity Tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Check Connection(failed)">
+    <classes>
+      <class name="checkConnection.OpenWikipedia">
+        <methods>
+          <include name="openAmazon"/>
+        </methods>
+      </class> <!-- checkConnection.OpenWikipedia -->
+      <class name="checkConnection.OpenFlipkart">
+        <methods>
+          <include name="openAmazon"/>
+        </methods>
+      </class> <!-- checkConnection.OpenFlipkart -->
+      <class name="checkConnection.OpenGsmarena">
+        <methods>
+          <include name="opengsmarena"/>
+        </methods>
+      </class> <!-- checkConnection.OpenGsmarena -->
+    </classes>
+  </test> <!-- Check Connection(failed) -->
+</suite> <!-- Failed suite [Sanity Tests] -->
