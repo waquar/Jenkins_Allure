@@ -1,9 +1,12 @@
 package checkConnection;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.ITestContext;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import io.qameta.allure.Description;
@@ -13,23 +16,25 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
-public class OpenAmazon extends Testbase{
+@Listeners(allureListener.class)
+public class OpenAmazon{
 	
 	static WebDriver driver;
 	
 	
-	@BeforeTest
-	public void setupBrowser() {
+	@BeforeClass
+	public void setupBrowser(ITestContext itestcontext) {
 		
-		Testbase testbase = new Testbase();
-		testbase.initializeDriver();
-		driver = getDriver();
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/Drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		this.setDriver(itestcontext, driver);
+		driver.manage().window().maximize();
 	
 	}
 	
 	
-	@AfterTest
-	public void tearDownBrowser() {	
+	@AfterClass
+	public void tearDownBrowser(ITestContext itestcontext) {	
 		driver.quit();	
 	}
 	
@@ -39,7 +44,7 @@ public class OpenAmazon extends Testbase{
 	@Story("[ JIRA ID : SSV2-345 ] validate Gooogle home pae title")
 	@Feature("validate wrong title")
 	@Step("I am validating wrong title")
-	public void openAmazon() throws InterruptedException {
+	public void openAmazon(ITestContext itestcontext) throws InterruptedException {
 		
 		
 		driver.get("https://www.google.com");
@@ -55,7 +60,7 @@ public class OpenAmazon extends Testbase{
 	@Story("[ JIRA ID : SSV2-345 ] validate Gooogle home page title")
 	@Feature("validate correct title")
 	@Step("I am validating correct title")
-	public void opengoogle() throws InterruptedException {
+	public void opengoogle(ITestContext itestcontext) throws InterruptedException {
 		
 		
 		driver.get("https://www.google.com");
@@ -64,4 +69,14 @@ public class OpenAmazon extends Testbase{
 		
 		
 	}
+	
+	// Using Icontext for setting driver so that everywhere drive reference will be same
+	public void setDriver(ITestContext itestcontext, WebDriver driver ) {
+		itestcontext.setAttribute("WebDriver", driver);
+	}
+	
+	public static WebDriver getDriver(ITestContext itestcontext ) {
+		return (WebDriver) itestcontext.getAttribute("WebDriver");
+	}
+
 }

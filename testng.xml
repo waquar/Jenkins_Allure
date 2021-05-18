@@ -4,12 +4,13 @@
 <suite name="Suite">
 
 	<listeners>
-		<listener class-name= "Utilities.TestallureListeners"> </listener>
+		<listener class-name= "checkConnection.allureListener"> </listener>
 	</listeners>
 	
   <test thread-count="5" name="Test">
     <classes>
       <class name="checkConnection.OpenAmazon"/>
+      <class name="checkConnection.OpenFlipkart"/>
     </classes>
     
   </test> <!-- Test -->

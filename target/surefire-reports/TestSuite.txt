@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 21.877 s <<< FAILURE! - in TestSuite
+checkConnection.OpenAmazon.openAmazon[org.testng.TestRunner@c446b14](1)  Time elapsed: 2.136 s  <<< FAILURE!
+java.lang.AssertionError: expected [Gooogle] but found [Google]
+	at checkConnection.OpenAmazon.openAmazon(OpenAmazon.java:51)
+
+checkConnection.OpenFlipkart.openFlipkartwrongTitle[org.testng.TestRunner@c446b14](1)  Time elapsed: 8.433 s  <<< FAILURE!
+java.lang.AssertionError: expected [Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!] but found [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!]
+	at checkConnection.OpenFlipkart.openFlipkartwrongTitle(OpenFlipkart.java:57)
+
