@@ -67,7 +67,6 @@ public class OpenAmazon{
 		Assert.assertEquals(driver.getTitle(), "Google");		
 		Thread.sleep(5000);
 		
-		
 	}
 	
 	// Using Icontext for setting driver so that everywhere drive reference will be same

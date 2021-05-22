@@ -1,28 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-18T18:03:13Z" name="Suite" finished-at="2021-05-18T18:03:34Z" duration-ms="20745">
+  <suite started-at="2021-05-22T14:46:01Z" name="Suite" finished-at="2021-05-22T14:46:37Z" duration-ms="35716">
     <groups>
     </groups>
-    <test started-at="2021-05-18T18:03:13Z" name="Test" finished-at="2021-05-18T18:03:34Z" duration-ms="20745">
-      <class name="checkConnection.OpenAmazon">
-        <test-method is-config="true" signature="setupBrowser(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenAmazon@1af687fe]" started-at="2021-05-18T18:03:13Z" name="setupBrowser" finished-at="2021-05-18T18:03:14Z" duration-ms="1412" status="PASS">
+    <test started-at="2021-05-22T14:46:01Z" name="Test" finished-at="2021-05-22T14:46:37Z" duration-ms="35716">
+      <class name="checkConnection.OpenGsmarena">
+        <test-method is-config="true" signature="setupBrowser(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenGsmarena@5a411614]" started-at="2021-05-22T14:46:23Z" name="setupBrowser" finished-at="2021-05-22T14:46:25Z" duration-ms="1248" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c446b14]]>
+                <![CDATA[org.testng.TestRunner@7068f7ca]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="openAmazon(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenAmazon@1af687fe]" started-at="2021-05-18T18:03:14Z" name="openAmazon" description="This test case validates google home page" finished-at="2021-05-18T18:03:16Z" duration-ms="1957" status="FAIL">
+        <test-method signature="opengsmarena()[pri:0, instance:checkConnection.OpenGsmarena@5a411614]" started-at="2021-05-22T14:46:25Z" name="opengsmarena" description="This test case validates Gsmarena home page" finished-at="2021-05-22T14:46:36Z" duration-ms="11591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opengsmarena -->
+        <test-method is-config="true" signature="tearDownBrowser(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenGsmarena@5a411614]" started-at="2021-05-22T14:46:36Z" name="tearDownBrowser" finished-at="2021-05-22T14:46:37Z" duration-ms="707" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c446b14]]>
+                <![CDATA[org.testng.TestRunner@7068f7ca]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+      </class> <!-- checkConnection.OpenGsmarena -->
+      <class name="checkConnection.OpenAmazon">
+        <test-method is-config="true" signature="setupBrowser(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenAmazon@3f390d63]" started-at="2021-05-22T14:46:01Z" name="setupBrowser" finished-at="2021-05-22T14:46:03Z" duration-ms="1608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7068f7ca]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="openAmazon(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenAmazon@3f390d63]" started-at="2021-05-22T14:46:03Z" name="openAmazon" description="This test case validates google home page" finished-at="2021-05-22T14:46:05Z" duration-ms="1683" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7068f7ca]]>
               </value>
             </param>
           </params>
@@ -74,22 +102,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazon -->
-        <test-method signature="opengoogle(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenAmazon@1af687fe]" started-at="2021-05-18T18:03:17Z" name="opengoogle" description="This test case validates google home page" finished-at="2021-05-18T18:03:22Z" duration-ms="5467" status="PASS">
+        <test-method signature="opengoogle(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenAmazon@3f390d63]" started-at="2021-05-22T14:46:05Z" name="opengoogle" description="This test case validates google home page" finished-at="2021-05-22T14:46:11Z" duration-ms="5498" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c446b14]]>
+                <![CDATA[org.testng.TestRunner@7068f7ca]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opengoogle -->
-        <test-method is-config="true" signature="tearDownBrowser(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenAmazon@1af687fe]" started-at="2021-05-18T18:03:22Z" name="tearDownBrowser" finished-at="2021-05-18T18:03:23Z" duration-ms="644" status="PASS">
+        <test-method is-config="true" signature="tearDownBrowser(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenAmazon@3f390d63]" started-at="2021-05-22T14:46:11Z" name="tearDownBrowser" finished-at="2021-05-22T14:46:12Z" duration-ms="759" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c446b14]]>
+                <![CDATA[org.testng.TestRunner@7068f7ca]]>
               </value>
             </param>
           </params>
@@ -98,22 +126,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
         </test-method> <!-- tearDownBrowser -->
       </class> <!-- checkConnection.OpenAmazon -->
       <class name="checkConnection.OpenFlipkart">
-        <test-method is-config="true" signature="setupBrowser(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenFlipkart@14dda234]" started-at="2021-05-18T18:03:23Z" name="setupBrowser" finished-at="2021-05-18T18:03:24Z" duration-ms="1200" status="PASS">
+        <test-method is-config="true" signature="setupBrowser(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenFlipkart@74a6a609]" started-at="2021-05-22T14:46:12Z" name="setupBrowser" finished-at="2021-05-22T14:46:13Z" duration-ms="1267" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c446b14]]>
+                <![CDATA[org.testng.TestRunner@7068f7ca]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="openFlipkartwrongTitle(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenFlipkart@14dda234]" started-at="2021-05-18T18:03:24Z" name="openFlipkartwrongTitle" description="This test case validates google home page" finished-at="2021-05-18T18:03:32Z" duration-ms="8190" status="FAIL">
+        <test-method signature="openFlipkartwrongTitle(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenFlipkart@74a6a609]" started-at="2021-05-22T14:46:13Z" name="openFlipkartwrongTitle" description="This test case validates google home page" finished-at="2021-05-22T14:46:22Z" duration-ms="8885" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c446b14]]>
+                <![CDATA[org.testng.TestRunner@7068f7ca]]>
               </value>
             </param>
           </params>
@@ -129,7 +157,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at checkConnection.OpenFlipkart.openFlipkartwrongTitle(OpenFlipkart.java:57)
+at checkConnection.OpenFlipkart.openFlipkartwrongTitle(OpenFlipkart.java:51)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,11 +193,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openFlipkartwrongTitle -->
-        <test-method is-config="true" signature="tearDownBrowser(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenFlipkart@14dda234]" started-at="2021-05-18T18:03:33Z" name="tearDownBrowser" finished-at="2021-05-18T18:03:34Z" duration-ms="990" status="PASS">
+        <test-method is-config="true" signature="tearDownBrowser(org.testng.ITestContext)[pri:0, instance:checkConnection.OpenFlipkart@74a6a609]" started-at="2021-05-22T14:46:23Z" name="tearDownBrowser" finished-at="2021-05-22T14:46:23Z" duration-ms="765" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c446b14]]>
+                <![CDATA[org.testng.TestRunner@7068f7ca]]>
               </value>
             </param>
           </params>

@@ -1,5 +1,6 @@
 checkConnection\OpenAmazon.class
 checkConnection\OpenFlipkart.class
-checkConnection\OpenWikipedia.class
 checkConnection\allureListener.class
 checkConnection\OpenGsmarena.class
+checkConnection\Loopcheck.class
+checkConnection\OpenWikipedia.class

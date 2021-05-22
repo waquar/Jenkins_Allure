@@ -1,0 +1,5 @@
+target/
+allure-results/
+test-output/
+index.html/
+index1.html/

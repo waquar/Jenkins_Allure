@@ -11,6 +11,7 @@
     <classes>
       <class name="checkConnection.OpenAmazon"/>
       <class name="checkConnection.OpenFlipkart"/>
+      <class name="checkConnection.OpenGsmarena"/>
     </classes>
     
   </test> <!-- Test -->
